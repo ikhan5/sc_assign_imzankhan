@@ -22,19 +22,19 @@ class Index
         return $contents;
     }
 
-    public function Search($apikey, $search, $limit = 25)
+    public function Search($apikey, $search, $limit = 25, $offset = 0, $rating = '')
     {
         $endpoint = 'v1/gifs/search';
-        $query = ['q' => $search, 'limit' => $limit];
+        $query = ['q' => $search, 'limit' => $limit, 'offset' => $offset, 'rating' => $rating,];
         $response = Index::Base($apikey, $endpoint, $query);
 
         return $response;
     }
 
-    public function Trending($apikey, $limit = 25)
+    public function Trending($apikey, $limit = 25, $offset = 0, $rating = '')
     {
         $endpoint = 'v1/gifs/trending';
-        $query = ['limit' => $limit];
+        $query = ['offset' => $offset, 'rating' => $rating, 'limit' => $limit];
         $response = Index::Base($apikey, $endpoint, $query);
         return $response;
     }
