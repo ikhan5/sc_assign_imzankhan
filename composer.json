@@ -13,7 +13,7 @@
   ],
   "minimum-stability": "dev",
   "autoload": {
-    "psr-4": {
+    "psr-": {
       "imzankhan\\SC_Assign\\": "src/"
     }
   }
