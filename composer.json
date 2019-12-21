@@ -1,0 +1,20 @@
+{
+  "name": "imzankhan/scassign",
+  "description": "Smooth Commerce Assignment",
+  "require": {
+    "guzzlehttp/guzzle": "^7.0@dev"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Imzan Khan",
+      "email": "imzan@mindtrades.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "imzankhan\\SC_Assign\\": "src/"
+    }
+  }
+}
