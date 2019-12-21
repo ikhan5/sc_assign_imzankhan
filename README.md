@@ -4,4 +4,8 @@
 
 ### Search 
 
-Parameters:  Search($apikey,$query, $limit, $offset, $rating);
+Parameters: Search($apikey,$query, $limit, $offset, $rating);
+
+### Trending 
+
+Parameters: Trending($apikey, $limit, $offset, $rating);
